@@ -1,17 +1,11 @@
-import type { Metadata } from "next";
-import type React from "react";
 import "./globals.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "AI 工具导航",
-  description: "AI 导航站",
+  description: "收集全网优质AI工具",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN">
       <body>{children}</body>
